@@ -32,6 +32,7 @@
             this.inputTextbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.outputTextbox = new System.Windows.Forms.Label();
+            this.ButtonKeluar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // SubmitButton
@@ -69,12 +70,23 @@
             this.outputTextbox.AutoSize = true;
             this.outputTextbox.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.outputTextbox.Font = new System.Drawing.Font("MS PGothic", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputTextbox.Location = new System.Drawing.Point(259, 227);
+            this.outputTextbox.Location = new System.Drawing.Point(111, 216);
             this.outputTextbox.Name = "outputTextbox";
             this.outputTextbox.Size = new System.Drawing.Size(144, 33);
             this.outputTextbox.TabIndex = 3;
             this.outputTextbox.Text = "OUTPUT";
             this.outputTextbox.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // ButtonKeluar
+            // 
+            this.ButtonKeluar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ButtonKeluar.Location = new System.Drawing.Point(555, 188);
+            this.ButtonKeluar.Name = "ButtonKeluar";
+            this.ButtonKeluar.Size = new System.Drawing.Size(171, 61);
+            this.ButtonKeluar.TabIndex = 4;
+            this.ButtonKeluar.Text = "keluar";
+            this.ButtonKeluar.UseVisualStyleBackColor = false;
+            this.ButtonKeluar.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Form1
             // 
@@ -82,6 +94,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ButtonKeluar);
             this.Controls.Add(this.outputTextbox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.inputTextbox);
@@ -100,6 +113,7 @@
         private System.Windows.Forms.TextBox inputTextbox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label outputTextbox;
+        private System.Windows.Forms.Button ButtonKeluar;
     }
 }
 
